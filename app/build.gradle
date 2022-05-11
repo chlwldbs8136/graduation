@@ -63,3 +63,8 @@ dependencies {
     implementation 'org.tensorflow:tensorflow-lite:2.2.0'
     implementation 'org.tensorflow:tensorflow-lite-support:0.0.0-nightly'
 }
+task wrapper(type: Wrapper) {
+    gradleVersion = '7.0'
+}
+
+tasks.register("prepareKotlinBuildScriptModel"){}
